@@ -13,7 +13,7 @@ export default createGlobalStyle`
     }
 
     body, input, button, textarea{
-        font-family: 'Poppins', sans - serif;
+        font-family: 'Poppins', sans-serif;
         font-size: 1rem;
     }
 
