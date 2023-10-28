@@ -13,7 +13,7 @@ export default function SignUp() {
         <Brand>
           <img src={logo} alt="Logo Food Explorer" />
         </Brand>
-        <FormControl link="name" title="Seu Nome">
+        <FormControl link="name" title="Seu nome">
           <Input type="text" id="name" placeholder="Exemplo: Maria da Silva" />
         </FormControl>
         <FormControl link="email" title="E-mail">
@@ -32,6 +32,7 @@ export default function SignUp() {
         </FormControl>
 
         <Button title="Criar Conta" />
+        <a to="/">Já tenho uma conta</a>
       </Form>
     </Container>
   );

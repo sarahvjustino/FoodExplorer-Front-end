@@ -6,7 +6,7 @@ export const Container = styled.button`
     align-items: center;
     gap: .8rem;
     width: 100%;
-    background-color: ${({ theme }) => theme.COLORS.TOMATO_100};
+    background-color: ${({ theme, $isDark }) => $isDark ? theme.COLORS.DARK_800 : theme.COLORS.TOMATO_100};
     color: ${({ theme }) => theme.COLORS.WHITE};
     font-size: 1.4rem;
     font-weight: 500;

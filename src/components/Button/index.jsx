@@ -1,8 +1,14 @@
 import { Container } from "./styles";
 
-export function Button({ title, disable = false, icon: Icon, ...rest }) {
+export function Button({
+  title,
+  disable = false,
+  isDark,
+  icon: Icon,
+  ...rest
+}) {
   return (
-    <Container disabled={disable} {...rest}>
+    <Container type="button" disabled={disable} $isDark={isDark} {...rest}>
       {Icon && <Icon size="20" />}
       {title}
     </Container>
