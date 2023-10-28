@@ -5,6 +5,11 @@ export const Container = styled.div`
     height: 100vh;  
     display: grid;
     place-items: center;
+
+    @media (min-width: 1024px) {
+        place-content: center;
+        grid-template-columns: 1fr 60%;
+    }
 `
 
 export const Form = styled.form`
@@ -15,17 +20,28 @@ export const Form = styled.form`
     align-items: center; 
     gap: 3.2rem;
 
+    h1{
+        font-size: 3.2rem;
+        font-weight: 500;
+        line-height: 140%;
+        display: none;
+    }
+
     > a{
         font-size: 1.4rem;
         font-weight: 500;
         line-height: 2.4rem;
         color: ${({ theme }) => theme.COLORS.WHITE};
     }
-`
 
-export const Brand = styled.div`
-    display: flex;
-    justify-content: center; 
-    width: 100%;
-    margin-bottom: 7.3rem;
+    @media (min-width: 1024px) {
+        max-width: 47.8rem;
+        padding: 6.4rem;
+        background-color: ${({ theme }) => theme.COLORS.DARK_700};
+        border-radius: 1.6rem;
+
+        > h1{
+            display: inline;
+        }
+    }
 `
