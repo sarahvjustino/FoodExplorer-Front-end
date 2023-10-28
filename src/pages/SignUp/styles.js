@@ -5,8 +5,20 @@ export const Container = styled.div`
     height: 100vh;  
     display: grid;
     place-items: center;
+`
 
-    button{
-        width: 19.75rem;
-    }
+export const Form = styled.form`
+    width: 100%;
+    max-width: 31.6rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    gap: 3.2rem;
+`
+
+export const Brand = styled.div`
+    display: flex;
+    justify-content: center; 
+    width: 100%;
+    margin-bottom: 7.3rem;
 `

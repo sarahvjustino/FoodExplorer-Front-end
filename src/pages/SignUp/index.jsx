@@ -1,13 +1,38 @@
-import { Container } from "./styles";
+import { Container, Form, Brand } from "./styles";
+
+import logo from "../../assets/logo.svg";
 
 import { Button } from "../../components/Button";
 import { Input } from "../../components/Input";
+import { FormControl } from "../../components/FormControl";
 
 export default function SignUp() {
   return (
     <Container>
-      <Input type="text" placeholder="Exemplo: Maria da Silva" />
-      <Button title="Criar Conta" />
+      <Form>
+        <Brand>
+          <img src={logo} alt="Logo Food Explorer" />
+        </Brand>
+        <FormControl link="name" title="Seu Nome">
+          <Input type="text" id="name" placeholder="Exemplo: Maria da Silva" />
+        </FormControl>
+        <FormControl link="email" title="E-mail">
+          <Input
+            type="email"
+            id="email"
+            placeholder="Exemplo: exemplo@exemplo.com.br"
+          />
+        </FormControl>
+        <FormControl title="Senha" link="password">
+          <Input
+            type="password"
+            id="password"
+            placeholder="No mínimo 6 caracteres"
+          />
+        </FormControl>
+
+        <Button title="Criar Conta" />
+      </Form>
     </Container>
   );
 }

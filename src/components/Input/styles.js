@@ -4,21 +4,22 @@ export const Container = styled.div`
     width: 100%;
     display: flex;
     align-items: center;
-    gap: .88rem;
+    gap: 1.63rem;
     
     background-color: ${({ theme }) => theme.COLORS.DARK_900};
     color: ${({ theme }) => theme.COLORS.LIGHT_400};
 
-    border-radius: .5rem;
+    border-radius: .8rem;
 
     > input{
         width: 100%;
-        height: 3rem;
-        padding: .75rem;
+        height: 4.8rem;
+        padding: 1.2rem 1.4rem;
         border: none;
-        font-size: 1rem;
+        font-size: 1.6rem;
         background-color: transparent;
         color: ${({ theme }) => theme.COLORS.WHITE};
+        outline-color: ${({ theme }) => theme.COLORS.WHITE};
         
         > ::placeholder{
             color: ${({ theme }) => theme.COLORS.LIGHT_500};

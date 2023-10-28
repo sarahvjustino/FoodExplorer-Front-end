@@ -4,15 +4,16 @@ export const Container = styled.button`
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: .5rem;
+    gap: .8rem;
+    width: 100%;
     background-color: ${({ theme }) => theme.COLORS.TOMATO_100};
     color: ${({ theme }) => theme.COLORS.WHITE};
-    font-size: .88rem;
+    font-size: 1.4rem;
     font-weight: 500;
-    padding: .75rem 2rem;
+    line-height: 2.4rem;
+    padding: 1.2rem 3.2rem;
     border: none;
-    border-radius: 0.32rem;
-    line-height: 1.5rem;
+    border-radius: .5rem;
     transition: all .3s;
 
     &:hover{
