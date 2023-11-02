@@ -16,9 +16,11 @@ export const Container = styled.div`
         height: 4.8rem;
         padding: 1.2rem 1.4rem;
         border: none;
+        font-family: "Roboto", sans-serif;
         font-size: 1.6rem;
         background-color: transparent;
         color: ${({ theme }) => theme.COLORS.WHITE};
+        outline-width: 1px;
         outline-color: ${({ theme }) => theme.COLORS.WHITE};
         
         > ::placeholder{
