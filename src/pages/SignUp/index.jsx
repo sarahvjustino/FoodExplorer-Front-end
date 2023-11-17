@@ -7,7 +7,7 @@ import { Input } from "../../components/Input";
 import { FormControl } from "../../components/FormControl";
 import { Logo } from "../../components/Logo";
 
-export default function SignUp() {
+export function SignUp() {
   return (
     <Container>
       <Logo logo={logo} />
@@ -16,7 +16,7 @@ export default function SignUp() {
         <FormControl link="name" title="Seu nome">
           <Input type="text" id="name" placeholder="Exemplo: Maria da Silva" />
         </FormControl>
-        <FormControl link="email" title="E-mail">
+        <FormControl link="email" title="Email">
           <Input
             type="email"
             id="email"

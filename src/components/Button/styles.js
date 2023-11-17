@@ -5,7 +5,7 @@ export const Container = styled.button`
     justify-content: center;
     align-items: center;
     gap: .8rem;
-    width: 100%;
+    /* width: 100%; */
     background-color: ${({ theme, $isDark }) => $isDark ? theme.COLORS.DARK_800 : theme.COLORS.TOMATO_100};
     color: ${({ theme }) => theme.COLORS.WHITE};
     font-size: 1.4rem;

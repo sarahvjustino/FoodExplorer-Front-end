@@ -7,7 +7,7 @@ import { Input } from "../../components/Input";
 import { FormControl } from "../../components/FormControl";
 import { Logo } from "../../components/Logo";
 
-export default function SignUp() {
+export function SignIn() {
   return (
     <Container>
       <Logo logo={logo} />
